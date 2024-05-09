@@ -29,7 +29,19 @@ Manual de usuario, Melvin Sosa.pdf
 
 
 # Base de Datos
-Ejecutar el script SQL encontrado en ./BASE DE DATOS para crear y configurar la base de datos.
+Importar base de datos como:
+
+![image](https://github.com/melvinSosaMedrano/BancoAtlanRep/assets/115840261/0d4bded4-5dd3-4909-8ac7-696d581942cd)
+
+Buscamos el archivo BDBACKUP.bacpac de la carpeta BASE DE DATOS en GITHUB
+
+![image](https://github.com/melvinSosaMedrano/BancoAtlanRep/assets/115840261/004c737e-8495-40ab-b0fa-c4c836171ccb)
+
+Luego Next, Next, y finish
+
+La base de datos ya contiene poblado de datos.
+
+(Se adjuntan como contingente dbscript.sql en caso de no poder restaurar la base de datos)
 
 
 # Aplicación
