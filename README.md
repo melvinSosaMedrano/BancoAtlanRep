@@ -61,5 +61,10 @@ Configurar en el Proyecto VistaAlan  las variables:
 Compila la solución para verificar que todo esté configurado correctamente.
 
 
+# POSTMAN
+
+Se Agrego documento de coleccion postman en la carpeta POSTMAN en repositorio GITHUB
+
+
 
   
