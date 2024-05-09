@@ -1,0 +1,239 @@
+{
+	"info": {
+		"_postman_id": "f47d8137-bf47-4e9a-8961-99741fd8c33f",
+		"name": "BANCOATLANTIDA",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "9958013"
+	},
+	"item": [
+		{
+			"name": "GET CLIENTE ESPECIFICO",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:47411/CLIENTE/api/Get?codcliente=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "47411",
+					"path": [
+						"CLIENTE",
+						"api",
+						"Get"
+					],
+					"query": [
+						{
+							"key": "codcliente",
+							"value": "1",
+							"description": "CODIGO DE CLIENTE"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET TODOS LOS CLIENTES",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:47411/CLIENTE/api/Gets",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "47411",
+					"path": [
+						"CLIENTE",
+						"api",
+						"Gets"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET TARJETAS DE CREDITO BY CLIENTE",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:47411/TARJETAS/api/Gets?codcliente=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "47411",
+					"path": [
+						"TARJETAS",
+						"api",
+						"Gets"
+					],
+					"query": [
+						{
+							"key": "codcliente",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET DETALLE DE CUENTA DE LA TARJETA",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:47411/TARJETAS/api/GetDetalle?numcuenta=575002",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "47411",
+					"path": [
+						"TARJETAS",
+						"api",
+						"GetDetalle"
+					],
+					"query": [
+						{
+							"key": "numcuenta",
+							"value": "575002"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET HISTORICO DE TRANSACCIONES",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:47411/TARJETAS/api/HisTransacciones?numcuenta=575002",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "47411",
+					"path": [
+						"TARJETAS",
+						"api",
+						"HisTransacciones"
+					],
+					"query": [
+						{
+							"key": "numcuenta",
+							"value": "575002"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PAGO DE TARJETA CON TIPO INVALIDO DE PAGO",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"numtarjeta\": 124578,\r\n  \"monto\": 10,\r\n  \"descripcion\": \"PAGO DE TARJETA\",\r\n  \"tipo\": 3\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:47411/TARJETAS/api/RealizarCompra",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "47411",
+					"path": [
+						"TARJETAS",
+						"api",
+						"RealizarCompra"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PAGO DE TARJETA ",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"numtarjeta\": 124578,\r\n  \"monto\": 10,\r\n  \"descripcion\": \"PAGO DE TARJETA\",\r\n  \"tipo\": 0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:47411/TARJETAS/api/RealizarCompra",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "47411",
+					"path": [
+						"TARJETAS",
+						"api",
+						"RealizarCompra"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "COMPRA CON TARJETA",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"numtarjeta\": 124578,\r\n  \"monto\": 10,\r\n  \"descripcion\": \"COMPRA DE PS5\",\r\n  \"tipo\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:47411/TARJETAS/api/RealizarCompra",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "47411",
+					"path": [
+						"TARJETAS",
+						"api",
+						"RealizarCompra"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
