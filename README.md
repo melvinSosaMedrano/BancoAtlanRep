@@ -29,7 +29,7 @@ Manual de usuario, Melvin Sosa.pdf
 
 
 # Base de Datos
-Ejecutar el script SQL encontrado en ./DataBase para crear y configurar la base de datos.
+Ejecutar el script SQL encontrado en ./BASE DE DATOS para crear y configurar la base de datos.
 
 
 # Aplicación
